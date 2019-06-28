@@ -1,5 +1,5 @@
 <?php
-error_reporting(0);
+
 require_once('conection.php');
 
 $stmt = $conection->prepare("
@@ -29,6 +29,7 @@ $movies = $stmt->fetchAll(PDO::FETCH_ASSOC);
     </li>
   <?php endforeach; ?>
 </ul>
-<a href="add-movie.php">Agregar película</a>
+<a href="agregarPelicula.php">Agregar película</a>
+<a href="buscador.php">Buscá película</a>
   </body>
 </html>
